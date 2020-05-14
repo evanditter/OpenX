@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ImageSlider">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" >
+    </androidx.viewpager.widget.ViewPager>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/requestSellerInfo"
+        android:layout_width="175dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="80dp"
+        android:background="#8BC34A"
+        android:text="Request Seller Info"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <Button
+        android:id="@+id/buy_item_view_price"
+        android:layout_width="175dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="80dp"
+        android:background="#141D53"
+        android:gravity="center"
+        android:text="$30"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/requestSellerInfo"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <TextView
+        android:id="@+id/AlertTextView"
+        android:layout_width="175dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/requestSellerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#141D53"
+        android:gravity="center"
+        android:text="Seller Notified!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/requestSellerInfo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="390dp"
+        android:layout_height="131dp"
+        android:layout_below="@+id/requestSellerInfo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Gopher Football vs. Wisconsin Student Ticket\n\n Location: 55414 \n\n Event Date: 11/30/19 \n\n"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestSellerInfo"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/csci4041Title"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Gopher Football vs. Wisconsin Student Ticket"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <TextView
+        android:id="@+id/usernamePoints"
+        android:layout_width="348dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:text="tony_tiger | 770 points"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buy_item_view_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/csci4041Title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/footballTag"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#9FA6A7"
+        android:gravity="center"
+        android:text="Football"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sportingEventTag"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+    <TextView
+        android:id="@+id/sportingEventTag"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#9FA6A7"
+        android:gravity="center"
+        android:text="Sporting Event"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+    <TextView
+        android:id="@+id/collegiateTag"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#9FA6A7"
+        android:gravity="center"
+        android:text="Collegiate"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/sportingEventTag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buy_categories">
+        <item>Select a Category</item>
+        <item>Tickets</item>
+        <item>Textbooks</item>
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Furniture</item>
+    </string-array>
+
+    <string-array name="textbook_conditions">
+        <item>Select a Condition</item>
+        <item>New</item>
+        <item>Rarely Used</item>
+        <item>Used</item>
+        <item>Heavily Used</item>
+    </string-array>
+
+    <string-array name="ticket_tags">
+        <item>Tags</item>
+        <item>Sporting Event</item>
+        <item>Concert</item>
+        <item>Comedy Show</item>
+        <item>Theater</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Hockey</item>
+        <item>Collegiate</item>
+        <item>Pro</item>
+        <item>Rap</item>
+        <item>Hip-Hop</item>
+        <item>Pop</item>
+        <item>Rock</item>
+    </string-array>
+
+    <string-array name="textbook_tags">
+        <item>Tags</item>
+        <item>CSE</item>
+        <item>CLA</item>
+        <item>CBS</item>
+        <item>CSOM</item>
+        <item>CEHD</item>
+        <item>CDES</item>
+        <item>CFANS</item>
+        <item>Algorithms</item>
+        <item>Artificial Intelligence</item>
+        <item>Data Mining</item>
+        <item>Data Structures</item>
+        <item>Machine Architecture</item>
+        <item>Accounting</item>
+        <item>Hardcover</item>
+        <item>Paperback</item>
+        <item>Required</item>
+    </string-array>
+
+</resources>

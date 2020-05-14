@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.openx">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InterestedBuyers"></activity>
+        <activity android:name=".UpdateActivePosts" />
+        <activity android:name=".FilterBuy" />
+        <activity android:name=".SellItemCategory" />
+        <activity android:name=".UserPostDetailTwoOpt" />
+        <activity android:name=".UserPostDetail" />
+        <activity android:name=".AccountDetail" />
+        <activity android:name=".MainProfile" />
+        <activity android:name=".BuyItemCategory" />
+        <activity android:name=".BuyCardView" />
+        <activity android:name=".ImageSlider" />
+        <activity android:name=".ImageSlider2" />
+        <activity android:name=".ImageSliderPreview" />
+        <activity android:name=".ImageAdapterPreview" />
+        <activity android:name=".PostPublished" />
+        <activity
+            android:name=".MainActivity"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
